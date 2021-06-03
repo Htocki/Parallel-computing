@@ -11,7 +11,7 @@ def generateMatrix(m, set):
     matrix = array([0 for i in range(m * len(set))])
     for i in range(m):
         for j in range(len(set)):
-            matrix[len(set)*i + j] = set[j]
+            matrix[len(set) * i + j] = set[j]
     matrix.shape = (m, len(set))
     return matrix
 
@@ -19,8 +19,7 @@ if rank == 0:
     print("Введите m:")
     m = int(input())
     print("Введите n:")
-    n = int(input())
-    
+    n = int(input()) 
     comm.Send(array([n, m]), 1)
 
 if rank == 1:
