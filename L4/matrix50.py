@@ -1,5 +1,5 @@
 # Программа написана и проверена на Python 3.9.5
-# Комманда для выполнения программы: mpirun -n 2 python matrix20.py
+# Комманда для выполнения программы: mpirun -n 2 python matrix50.py
 
 from numpy import argmax, argmin, array, random
 from mpi4py import MPI
